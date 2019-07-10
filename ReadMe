@@ -6,7 +6,7 @@ docker build -t nodejs-container Nodejs/
 docker build -t python-container Python/
 
 ## Or you can run:
-docker-compose build to compile all images
+docker-compose build 
 
 # Run environment:
 
