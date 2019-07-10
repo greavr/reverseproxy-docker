@@ -10,7 +10,7 @@ const HOST = '0.0.0.0';
 const app = express();
 
 app.get('/', (req, res) => {
-  var response =  'Hello From the Java app<br />';
+  var response =  'Hello From the Front End: Java app<br />';
 
   var backend = 'http://python:5000';
   var request = require('sync-request');
