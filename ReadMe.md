@@ -1,5 +1,5 @@
-# Using Docker Composer to run a multi-layer web app (badly written)
------------
+# Nginx Reverse Proxy Container
+
 The basic data design is:
 
 Nginx Reverse Proxy on port 80 --> 
