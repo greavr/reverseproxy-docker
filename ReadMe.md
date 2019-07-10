@@ -6,7 +6,7 @@ Nginx Reverse Proxy on port 80 -->
 Forwarding to a NodeJS container listening on port 8080 -->
 Making a Sync request call against a Python container listening on port 5000
 
-Docker network DNS configured in [docker-composer.yaml](docker-composer.yaml) file
+Docker network DNS configured in [docker-composer.yaml](https://github.com/greavr/reverseproxy-docker/blob/master/docker-compose.yml) file
 
 # Build all containers:
 ```
