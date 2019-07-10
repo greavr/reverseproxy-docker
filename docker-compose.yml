@@ -1,0 +1,29 @@
+version: '2'
+
+services:
+    proxy-app:
+        build:
+          dockerfile: Dockerfile
+          context: ./nginx
+        image: nginx-reverseproxy
+        ports:
+            - 80:8080
+        restart: always
+
+    nodejs:
+        build:
+            dockerfile: Dockerfile
+            context: ./Nodejs
+        depends_on:
+            - proxy-app
+        image: nodejs-container
+        restart: always
+
+    python:
+        build:
+            dockerfile: Dockerfile
+            context: ./Python
+        depends_on:
+            - proxy-app
+        image: python-container
+        restart: always
