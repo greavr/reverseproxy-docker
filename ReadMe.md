@@ -12,6 +12,7 @@ Docker network DNS configured in [docker-composer.yaml](https://github.com/greav
 ```
 docker build -t nginx-reverseproxy nginx/
 docker build -t nodejs-container Nodejs/
+docker build -t nodejs-container2 Nodejs2/
 docker build -t python-container Python/
 ```
 ## Or you can run:
